@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Fuhrerahro/etonatalaga.git/static/css/main.84199596.css",
-    "main.js": "/Fuhrerahro/etonatalaga.git/static/js/main.c240043c.js",
-    "static/js/453.0bfdeebc.chunk.js": "/Fuhrerahro/etonatalaga.git/static/js/453.0bfdeebc.chunk.js",
-    "static/media/logo.png": "/Fuhrerahro/etonatalaga.git/static/media/logo.77ea52331e960fd6ebd0.png",
-    "index.html": "/Fuhrerahro/etonatalaga.git/index.html",
-    "main.84199596.css.map": "/Fuhrerahro/etonatalaga.git/static/css/main.84199596.css.map",
-    "main.c240043c.js.map": "/Fuhrerahro/etonatalaga.git/static/js/main.c240043c.js.map",
-    "453.0bfdeebc.chunk.js.map": "/Fuhrerahro/etonatalaga.git/static/js/453.0bfdeebc.chunk.js.map"
+    "main.css": "/etonatalaga/static/css/main.84199596.css",
+    "main.js": "/etonatalaga/static/js/main.c445e747.js",
+    "static/js/453.0bfdeebc.chunk.js": "/etonatalaga/static/js/453.0bfdeebc.chunk.js",
+    "static/media/logo.png": "/etonatalaga/static/media/logo.77ea52331e960fd6ebd0.png",
+    "index.html": "/etonatalaga/index.html",
+    "main.84199596.css.map": "/etonatalaga/static/css/main.84199596.css.map",
+    "main.c445e747.js.map": "/etonatalaga/static/js/main.c445e747.js.map",
+    "453.0bfdeebc.chunk.js.map": "/etonatalaga/static/js/453.0bfdeebc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84199596.css",
-    "static/js/main.c240043c.js"
+    "static/js/main.c445e747.js"
   ]
 }
