@@ -1,38 +1,152 @@
-.App {
+/* =====================
+   GLOBAL
+===================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fa;
+  color: #1f2937;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px 100px;
+}
+
+/* =====================
+   HERO
+===================== */
+.header-hero {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  padding: 72px 24px;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 48px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.header-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  margin-bottom: 24px;
+}
+
+.search {
+  width: 100%;
+  max-width: 520px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* =====================
+   MENTOR GRID
+===================== */
+.mentor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+/* =====================
+   MODAL
+===================== */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000; /* 🔥 higher than navbar */
+}
+
+
+.modal-content {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 480px;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin-bottom: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modal-content input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.modal-content button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-content button:not(.close) {
+  background: #2563eb;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-content .close {
+  background: #e5e7eb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  margin-top: 64px;
+  padding: 32px;
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  border-radius: 16px;
+}
+
+/* =====================
+   BOTTOM NAV
+===================== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  z-index: 150;
+}
+
+.bottom-nav span {
+  font-size: 1.5rem;
+  cursor: pointer;
 }

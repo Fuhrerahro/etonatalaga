@@ -1,0 +1,127 @@
+/* =====================
+   NAVBAR BASE
+===================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+/* =====================
+   NAV ACTIONS
+===================== */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-actions button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.nav-actions button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* =====================
+   DROPDOWN
+===================== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  min-width: 160px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  display: none;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content span {
+  display: block;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.dropdown-content span:hover {
+  background: #f1f5f9;
+}
+
+/* =====================
+   DARK MODE
+===================== */
+.navbar.dark {
+  background: #111827;
+}
+
+.navbar.dark .logo {
+  color: #60a5fa;
+}
+
+.navbar.dark .nav-actions button {
+  background: #374151;
+  color: #f9fafb;
+}
+
+.navbar.dark .nav-actions button:hover {
+  background: #4b5563;
+}
+
+.navbar.dark .dropdown-content {
+  background: #1f2937;
+}
+
+.navbar.dark .dropdown-content span {
+  color: #f9fafb;
+}
+
+.navbar.dark .dropdown-content span:hover {
+  background: #374151;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 36px; /* perfect navbar size */
+  width: auto;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 700;
+}
